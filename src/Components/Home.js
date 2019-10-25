@@ -30,10 +30,14 @@ class Home extends Component {
                                                 If I had to pick 5 words to describe myself they would be: competitor,
                                                 inventor, entrepreneur, explorer, and team-player.
                                                 Some jobs that I am interested in are security researcher, system
-                                                administrator/architect, backend/fullstack developer, anything
-                                                related to machine learning, blockchain, robotics, or any job where I can
-                                                help to make a positive impact on the environment. Please contact me with any
-                                                job opportunities or questions, my contact information is in the page header.
+                                                administrator/architect, backend/fullstack developer. I'm also
+                                                interested in any jobs
+                                                related to machine learning, blockchain, robotics, or any job where I
+                                                can
+                                                help to make a positive impact on the environment. Please contact me
+                                                with any
+                                                job opportunities or questions, my contact information is in the page
+                                                header.
 
                                             </h5>
                                         </MDBCol>
