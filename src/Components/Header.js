@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {MDBCollapse, MDBIcon, MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBNavItem, MDBNavLink} from "mdbreact";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {HashRouter as Router, Switch, Route} from "react-router-dom";
 import Skills from "./Skills";
 import Hobbies from "./Hobbies";
 import Experience from "./Experience";
