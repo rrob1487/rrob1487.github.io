@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/react_resume.iml" filepath="$PROJECT_DIR$/.idea/react_resume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/react_resume_published.iml" filepath="$PROJECT_DIR$/.idea/react_resume_published.iml" />
     </modules>
   </component>
 </project>
