@@ -30,7 +30,7 @@ class Home extends Component {
                                                 If I had to pick 5 words to describe myself they would be: competitor,
                                                 inventor, entrepreneur, explorer, and team-player.
                                                 Some jobs that I am interested in are security researcher, system
-                                                administrator/architect, backend/fullstack developer. I'm also
+                                                administrator/architect, and backend/fullstack developer. I'm also
                                                 interested in any jobs
                                                 related to machine learning, blockchain, robotics, or any job where I
                                                 can
