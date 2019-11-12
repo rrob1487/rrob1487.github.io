@@ -56,10 +56,9 @@ class Experience extends Component {
                                     </MDBCardHeader>
                                     <Accordion.Collapse eventKey="0">
                                         {Experience.createCardBodyComponent([
-                                            "Analyzed, documented, and helped to refactor a backend system with little to no guidence",
-                                            "Worked efficiently and effectively within a fast passed scrum environment",
-                                            "Demonstrated the ability to drive for results, deal with ambiguity, prioritize work based on changing business dynamics, " +
-                                            "meet deadlines, and operate with personal and professional integrity"
+                                            "Analyzed, documented, and helped to refactor a backend system with little or no guidance",
+                                            "Worked efficiently and effectively within a fast-paced scrum environment",
+                                            "Demonstrated ability to drive for results, deal with ambiguity, prioritize work based on changing business dynamics, meet deadlines, and operate with personal and professional integrity"
                                         ], 0)}
                                     </Accordion.Collapse>
                                 </MDBCard>
@@ -74,8 +73,8 @@ class Experience extends Component {
                                     </MDBCardHeader>
                                     <Accordion.Collapse eventKey="1">
                                         {Experience.createCardBodyComponent([
-                                            "Demonstrated strong workflow management skills as shown from my ability to keep up with demand during peek hours",
-                                            "Showed proficiency in communication skills through my ability to communicate with a large diversity of people",
+                                            "Demonstrated strong workflow management skills as shown by my ability to keep up with demand during peak hours",
+                                            "Exhibited excellent communication skills as evidenced by effective communication with a large, diverse group of people",
                                             "Was actively responsive and able to understand the needs of others to ensure delivery of the desired results"
                                         ], 1)}
                                     </Accordion.Collapse>
@@ -86,7 +85,7 @@ class Experience extends Component {
                                     <MDBCardHeader className="bootstrapDark-1 text-light">
                                         <Accordion.Toggle className="text-light" as={Button} variant="link"
                                                           eventKey="2">
-                                            King Supers - Deli Clerk (July 2017 - September 2017)
+                                            King Soopers - Deli Clerk (July 2017 - September 2017)
                                         </Accordion.Toggle>
                                     </MDBCardHeader>
                                     <Accordion.Collapse eventKey="2">

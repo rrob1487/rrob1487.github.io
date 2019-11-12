@@ -28,9 +28,7 @@ class Hobbies extends Component {
                             index={2}
                             title="Sports"
                             picture={process.env.PUBLIC_URL + '/pictures/quidditch.jpg'}
-                            description="Sports have always been a big part of my life and they have taught me many lesson throughout the years.
-                            I played football from third grade to senior year of highschool, I ran track throughout highschool,
-                            and I even joined the CSU Quidditch team when I got to college. For me, sports are a great way to stay healthy and make new friends."
+                            description="Sports have always been a big part of my life and they have taught me many lessons through the years such as team work, compromise, and sportsmanship. I played football from third grade through my senior year of high school, and I ran track all four years of high school.  Because sports are such an important part of my life, I also joined the CSU Quidditch team.  For me, sports are a great way to stay healthy and make new friends."
                         />
                         <HobbiesCard className="z-depth-5"
                             index={3}
@@ -43,17 +41,13 @@ class Hobbies extends Component {
                             index={4}
                             title="Hackathons"
                             picture={process.env.PUBLIC_URL + '/pictures/vrhack.jpg'}
-                            description="I participated in my first hackathon spring 2017 and I've been hooked since.
-                            I've competed in all kinds of hackathons ranging from Fort Collins Start Up Weekend, to The CSU VR Hackathon.
-                            Something about the fast passed development environment and diversity of skills to learn keep me coming back."
+                            description="I participated in my first hackathon in spring 2017 and I've been hooked since. I've competed in all kinds of hackathons including the Fort Collins Start Up Weekend Hackathon, and The CSU VR Hackathon. Something about the fast-paced development environment and diversity of skills keep me coming back."
                         />
                         <HobbiesCard className="z-depth-5"
                             index={5}
                             title="Exploring New Technology"
                             picture={process.env.PUBLIC_URL + '/pictures/eth.jpg'}
-                            description="I've always been an early adopter. I had the first Android, I showed my friends fidget spinners before they were 'cool',
-                            and my Soundcloud likes are full of artists that most people have never heard of. I get a thrill out of discovering and learning new things, and
-                            technical solutions are no exception. AI and Blockchain are some of my favorite classes I took in college, and I can't wait to see what new tech the future holds. "
+                            description="I've always been an early adopter of technology. I had the first Android, I showed my friends fidget spinners before they were popular, and my Soundcloud likes are full of artists that most people have never heard of. I get a thrill out of discovering and learning new things, and technical solutions are no exception. AI and Blockchain were some of my favorite classes in college.  I can't wait to see what new tech the future holds."
                         />
                     </MDBCol>
                 </MDBRow>
