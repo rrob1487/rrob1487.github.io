@@ -21,15 +21,15 @@ class Home extends Component {
                                 <MDBJumbotron className="elegant-color z-depth-5">
                                     <MDBRow center>
                                         <MDBCol md="7" sm="12">
-                                            <h5 className="text-light indent-text" style={{padding: "3vh",}}>
+                                            <p className="text-light indent-text" >
                                                 Hi my name is Robbie Weinel, my pronouns are he/him, and I'm a developer
                                                 and business professional from Colorado.
-                                                I'm graduating from Colorado State University in December 2019 with a
+                                                I graduated from Colorado State University in December 2019 with a
                                                 double major in Computer Science and Business Administration with a
                                                 concentration in Computer Information Systems.
                                                 If I had to pick 5 words to describe myself, they would be: competitor,
-                                                inventor, intreprenuer, explorer, and team-player.
-                                                I am interested in job opportunities in security research, system
+                                                inventor, intreprenuer, autotelic, and team-player.
+                                                I am interested in job opportunities in security, research, system
                                                 administration, system architecture, and backend/fullstack development. I'm also
                                                 interested in any projects
                                                 related to machine learning, blockchain, robotics, or any job where I
@@ -39,10 +39,10 @@ class Home extends Component {
                                                 job opportunities or questions, my contact information is in the page
                                                 header.
 
-                                            </h5>
+                                            </p>
                                         </MDBCol>
                                         <MDBCol md="5" sm="12">
-                                            <img src={process.env.PUBLIC_URL + '/pictures/me.jpeg'}
+                                            <img style= {{marginTop: "8vh"}} src={process.env.PUBLIC_URL + '/pictures/me.jpg'}
                                                  alt={this.props.title}
                                                  className="img-fluid z-depth-3"/>
                                             <br/><br/>

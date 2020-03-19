@@ -44,4 +44,7 @@
 .indent-text {
     text-indent: 7vh;
     line-height: 4vh;
+    padding: 3vh;
+    font-size: 3vh;
+
 }

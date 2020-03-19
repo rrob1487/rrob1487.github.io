@@ -123,6 +123,7 @@ class Skills extends Component {
                                             <li>Microsoft Office</li>
                                             <li>Google Cloud Platform</li>
                                             <li>Docker</li>
+                                            <li>pfSense</li>
                                         </MDBCol>
                                     </MDBRow>
                                 </ul>

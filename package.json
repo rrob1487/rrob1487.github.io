@@ -1,7 +1,7 @@
 {
   "name": "your-app",
   "version": "0.1.0",
-  "homepage": "https://https://rrob1487.github.io/",
+  "homepage": "https://rrob1487.github.io/",
   "private": true,
   "// If You want to install mdbreact from our GitLab repository, please replace '4.21.0' with gitURL provided here ->": "git+https://oauth2:<YOUR-TOKEN-GOES-HERE>@git.mdbootstrap.com/mdb/react/re-pro.git",
   "dependencies": {
@@ -11,7 +11,7 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.4.0",
     "react-wow": "^1.0.0"
   },
   "scripts": {
