@@ -3,6 +3,8 @@ import React, {Component} from "react"
 import {ProjectObjects} from "./Projects"
 import Carousel from "react-bootstrap/Carousel"
 import {Link} from "react-router-dom"
+import { useTheme } from '@material-ui/core/styles'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 class ProjectPage extends Component {
     constructor(props) {
@@ -49,72 +51,72 @@ class ProjectPage extends Component {
             }
         })
     }
+render() {
+return (
+    <div>
+        <MDBContainer fluid className="elegant-color-dark">
+            <br/>
+            <Link to="/Projects">back to all projects</Link>
+            <MDBRow style={{height: "15vh"}}>
+                <MDBCol>
+                    <MDBContainer className="flex-center">
+                        <h1 className="text-light ">{this.state.ProjectName}</h1>
+                    </MDBContainer>
+                </MDBCol>
+                <MDBCol size="9"/>
+            </MDBRow>
+            <MDBRow center>
+                <MDBCol md='10'>
+                    <MDBJumbotron className="elegant-color z-depth-5">
+                        <MDBRow center>
+                            <MDBCol md="4">
+                                <h2 className="text-light">Date Finished:</h2>
+                                <p className="text-light">{this.state.DateFinished}</p>
+                                <br/>
+                                <h2 className="text-light">Project Description:</h2>
+                                <p className="text-light">{this.state.ProjectDescription}</p>
+                            </MDBCol>
+                            <MDBCol className="pictures" md="6">
+                                <Carousel controls={false}>
+                                    {this.state.Pictures.map((pic) => (
+                                        <Carousel.Item>
+                                            <img height={"300vh"} className="z-depth-3"
+                                                 src={process.env.PUBLIC_URL.concat("/pictures/", pic)}
+                                                alt={this.state.ProjectName}/>
+                                        </Carousel.Item>
+                                    ))}
 
-    render() {
-        return (
-            <div>
-                <MDBContainer fluid className="elegant-color-dark">
-                    <br/>
-                    <Link to="/Projects">back to all projects</Link>
-                    <MDBRow style={{height: "15vh"}}>
-                        <MDBCol>
-                            <MDBContainer className="flex-center">
-                                <h1 className="text-light ">{this.state.ProjectName}</h1>
-                            </MDBContainer>
-                        </MDBCol>
-                        <MDBCol size="9"/>
-                    </MDBRow>
-                    <MDBRow center>
-                        <MDBCol md='8'>
-                            <MDBJumbotron className="elegant-color z-depth-5">
-                                <MDBRow center>
-                                    <MDBCol md="4">
-                                        <h2 className="text-light">Date Finished:</h2>
-                                        <p className="text-light">{this.state.DateFinished}</p>
-                                        <br/>
-                                        <h2 className="text-light">Project Description:</h2>
-                                        <p className="text-light">{this.state.ProjectDescription}</p>
-                                    </MDBCol>
-                                    <MDBCol style={{padding: '3vh'}} md="6">
-                                        <Carousel controls={false}>
-                                            {this.state.Pictures.map((pic) => (
-                                                <Carousel.Item>
-                                                    <img height={"300vh"} className="z-depth-3"
-                                                         src={process.env.PUBLIC_URL.concat("/pictures/", pic)}/>
-                                                </Carousel.Item>
-                                            ))}
-
-                                        </Carousel>
-                                    </MDBCol>
-                                </MDBRow>
-                                <br/>
-                                <MDBRow center>
-                                    <MDBCol md="10">
-                                        <h2 className="text-light">The following is a list of tools used during this project:</h2>
-                                        <p className="text-light">{this.state.Tools}</p>
-                                    </MDBCol>
-                                </MDBRow>
-                                <br/>
-                                <MDBRow center>
-                                    <MDBCol md="10">
-                                        <h2 className="text-light">Lessons Learned:</h2>
-                                        <p className="text-light">{this.state.Lessons}</p>
-                                    </MDBCol>
-                                </MDBRow>
-                                <br/>
-                                <MDBRow center>
-                                    <MDBCol md="10">
-                                        <h2 className="text-light">Link To Code:</h2>
-                                        <p className="text-light">{this.state.Link ? <a target="_blank" rel="noopener noreferrer" href={this.state.Link}><MDBIcon fab icon="github"/> - {this.state.Link}</a>: "Coming Soon"}</p>
-                                    </MDBCol>
-                                </MDBRow>
-                            </MDBJumbotron>
-                        </MDBCol>
-                    </MDBRow>
-                </MDBContainer>
-            </div>
-        )
-    }
+                                </Carousel>
+                            </MDBCol>
+                        </MDBRow>
+                        <br/>
+                        <MDBRow center>
+                            <MDBCol md="10">
+                                <h2 className="text-light">The following is a list of tools used during this project:</h2>
+                                <p className="text-light">{this.state.Tools}</p>
+                            </MDBCol>
+                        </MDBRow>
+                        <br/>
+                        <MDBRow center>
+                            <MDBCol md="10">
+                                <h2 className="text-light">Lessons Learned:</h2>
+                                <p className="text-light">{this.state.Lessons}</p>
+                            </MDBCol>
+                        </MDBRow>
+                        <br/>
+                        <MDBRow center>
+                            <MDBCol md="10">
+                                <h2 className="text-light">Link To Code:</h2>
+                                <p className="text-light">{this.state.Link ? <a target="_blank" rel="noopener noreferrer" href={this.state.Link}><MDBIcon fab icon="github"/> - {this.state.Link}</a>: "Coming Soon"}</p>
+                            </MDBCol>
+                        </MDBRow>
+                    </MDBJumbotron>
+                </MDBCol>
+            </MDBRow>
+        </MDBContainer>
+    </div>
+)
+}
 }
 
 export default ProjectPage

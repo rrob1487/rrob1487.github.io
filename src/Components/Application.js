@@ -15,7 +15,7 @@ import Skills from "./Skills"
 import Hobbies from "./Hobbies"
 import Experience from "./Experience"
 import Home from "./Home"
-import {Projects, ProjectObjects} from "./Projects"
+import {Projects} from "./Projects"
 import ProjectPage from "./ProjectPage"
 
 class Application extends Component {
@@ -83,6 +83,10 @@ class Application extends Component {
                                 <MDBNavItem>
                                     <a className="nav-link" target="_blank" rel="noopener noreferrer"
                                        href="https://github.com/rrob1487"><MDBIcon fab icon="github"/></a>
+                                </MDBNavItem>
+                                <MDBNavItem>
+                                    <a className="nav-link" target="_blank" rel="noopener noreferrer"
+                                       href="https://www.linkedin.com/in/robbie-weinel-0013911a2/"><MDBIcon fab icon="linkedin"/></a>
                                 </MDBNavItem>
                                 <MDBNavItem>
                                     <a className="nav-link" target="_blank" rel="noopener noreferrer"

@@ -49,6 +49,7 @@ export const ProjectObjects = [
     Tools: "Every iteration of the blackjack game was written in Java. The final version used JSwing for the GUI, and socket layer networking for the peer to peer connection. ",
     Lessons: "Since I redid this project many times, there were many different skills I applied and refined, but the most important skill I learned from this project was multithreading. When I was writing my final iteration, the GUI had issues when it needed to refresh. As a result of that issue, and with research and through consultation with experts,  I was able to finish the project by moving the GUI into its own thread. I credit a lot of my successes as a programmer to my blackjack games, as they allowed me to challenge myself outside of class, and helped me to put a lot of my newly learned skills to the test. I will probably never do another blackjack game, but if I do, I will do the bulk of the work in solidity, and focus on writing efficient smart contracts so that I can decentralize it and do payments with real cryptocurrency.  ",
     DateFinished: "Nov 2016",
+    Pictures: ["blackjack1.png", "blackjack2.png", "blackjack3.png", "blackjack4.png", "blackjack5.png",],
     },
     {
     ProjectName: 'MIDI Board',

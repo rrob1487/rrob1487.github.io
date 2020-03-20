@@ -48,3 +48,10 @@
     font-size: 3vh;
 
 }
+
+@media (min-width: 750px){
+    .pictures {
+        padding-left: 20vh;
+        padding-top: 5vh;
+    }
+}
