@@ -27,7 +27,8 @@ export const ProjectObjects = [
         Tools: "A Spring Boot webserver was used with a React front end on a Raspberry Pi. The front end used the Spotify Search API to help users find songs and the back end parsed the URL of the song request and used an external library to download the file needed. The Raspberry Pi was set up with a static IP and could be attached to a set of speakers with either Bluetooth, Aux, or even HDMI, if you wanted to play music from a TV/Monitor. ",
         Lessons: "This project went very smoothly. At the start, my team understood all the different challenges that we would have to conquer, so we were prepared to quickly solve many of the issues as they arose. This was not my first time using React, so I had experience with it and provided most of the support on that part of the project.  The lack of learning curve ensured that the set up was quickly accomplished.  The most challenging task was getting the user verification for Spotify set up properly.",
         DateFinished: "Nov 2018",
-        Pictures: ["juke1.png", "juke2.png"]
+        Pictures: ["juke1.png", "juke2.png"],
+        Link: "https://github.com/rrob1487/Smart-Jukebox",
     },
     {
         ProjectName: 'Alarm Clock',
@@ -35,6 +36,7 @@ export const ProjectObjects = [
         Tools: "The user interface was a Java application that I created using the native JSwing library. The touchscreen came with its own software which was used because of the ease of set up. To use the Google Assistant library, I set up a Google Cloud Account and configured the proper authentication tokens. Overall, getting everything to work independently presented very few challenges.",
         Lessons: "Like many things in life, this project was great in theory, but not functional in practice. The software for the touchscreen and the Google Assistant required different versions of Raspbian and as a result, the libraries were incompatible, and I was forced to demonstrate the project in two different parts, hot swapping micro SD cards to show the different pieces. This issue could have been addressed by using a different touchscreen, or by using a HDMI enabled screen and some additional hardware buttons, but due to time constraints, I wasn’t able to procure the additional hardware necessary. This project was a great lesson in the importance of interoperability and system testing, and if I were to do it again, I would verify library compatibility beforehand. ",
         DateFinished: "Dec 2017",
+        Link: "https://github.com/rrob1487/Alarm-Clock"
     },
     {
         ProjectName: 'IoT Drapes',
@@ -42,6 +44,7 @@ export const ProjectObjects = [
         Tools: "For this project I used a Wi-Fi enabled micro controller, a 6V continuous rotation servo motor, a long dowel as the “curtain rod”, and several yards of blackout fabric. The fabric was wrapped around and attached to the dowel which was mounted above the window on custom made mounting hardware which allowed the entire system to rotate freely.  One end of the dowel was attached to the servo motor. As the servo would spin, the fabric would wrap around the dowel, allowing more or less light through the window, depending on whether the fabric was going up or down. I was able to find a GitHub library that had Arduino code to host a web server that functioned properly on my hardware, and from there I just added the code to parse the server requests, and move the motor accordingly.",
         Lessons: "This project presented the most learning opportunities, including basic household DIY tips, sewing tips and networking protocols.  The weight of the window covering presented challenges in keeping it on the wall; a better mounting system would be critical in a redesign.  Initially, to get the window covering functioning, I parsed the URL of HTTP GET requests and I did not design a GUI or user interface.  To remotely control the window covering movement I had to submit requests to the IP (which was not static) followed by a number between 0 and 100, which corresponded to the percent of window to cover. For example, if I wanted to put the shades all the way down, I would type 10.10.10.24/100 into my browser and it would start spinning.  This was problematic, mostly because of a lack of input sanitation.   This “buggy” system led to the window covering randomly activating, often, in the middle of the night. Overall, the window covering did function, and could be deployed remotely.  However, the physical design, coupled with the unsophisticated electronic interface, led to less than optimal operation.  If I were to design this project now, a total redesign of the hardware and software would result, but the main takeaways from this project are that a basic understanding of networking is crucial for any IoT devices and prototypes of the hardware would shed light on physical limitations prior to launching.",
         DateFinished: "Aug 2017",
+        Link: "https://github.com/rrob1487/IoT-Drapes",
     },
     {
         ProjectName: 'Blackjack',
@@ -50,6 +53,7 @@ export const ProjectObjects = [
         Lessons: "Since I redid this project many times, there were many different skills I applied and refined, but the most important skill I learned from this project was multithreading. When I was writing my final iteration, the GUI had issues when it needed to refresh. As a result of that issue, and with research and through consultation with experts,  I was able to finish the project by moving the GUI into its own thread. I credit a lot of my successes as a programmer to my blackjack games, as they allowed me to challenge myself outside of class, and helped me to put a lot of my newly learned skills to the test. I will probably never do another blackjack game, but if I do, I will do the bulk of the work in solidity, and focus on writing efficient smart contracts so that I can decentralize it and do payments with real cryptocurrency.  ",
         DateFinished: "Nov 2016",
         Pictures: ["blackjack1.png", "blackjack2.png", "blackjack3.png", "blackjack4.png", "blackjack5.png",],
+        Link: "https://github.com/rrob1487/Blackjack",
     },
     {
         ProjectName: 'MIDI Board',
@@ -58,6 +62,7 @@ export const ProjectObjects = [
         Lessons: "There were multiple challenges associated with this project including software debugging and base/shell design issues.  The primary lessons learned from this project were how to problem solve and improvise. This project challenged my dedication but my ability to fight through the adversity and setbacks and complete my goals is something that I am proud of even today. If I were to do this project again, I would modify hardware and perhaps choose different components. Based on my experience, I would use an Arduino Mega so that I have open pins for lights and potentiometers. I would also choose more lightweight and flexible design materials for the shell and base. And lastly, I wouldn’t use solid-core wire, as it is brittle and prone to breaking.",
         DateFinished: "Aug 2016",
         Pictures: ["midi1.jpeg", 'midi2.jpg'],
+        Link: "https://github.com/rrob1487/MIDI-Board",
     },]
 
 export class Projects extends Component {
