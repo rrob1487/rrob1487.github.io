@@ -6,6 +6,7 @@ import {
 } from "mdbreact"
 import ReactWOW from "react-wow"
 import {Link} from "react-router-dom"
+import {Projects} from "./Projects"
 
 class BasicCard extends Component {
     render() {
@@ -28,7 +29,7 @@ class BasicCard extends Component {
                                     </p>
 
                                     <br/>
-                                    {this.props.more ? <Link to={"/Projects/".concat(this.props.title)}>read more</Link> : <div/>}
+                                    {this.props.more ? <Link to={"/Projects/".concat(this.props.title)} onClick={()=>Projects.setScroll(window.pageYOffset)}>read more</Link> : <div/>}
                                 </MDBCol>
                             </MDBRow>
                         </MDBJumbotron>

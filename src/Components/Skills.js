@@ -63,6 +63,7 @@ class Skills extends Component {
                         <MDBJumbotron className="elegant-color z-depth-5">
                             <MDBContainer fluid>
                                 <h3 className="text-light">Programming Languages</h3>
+                                <br/>
                                 <table className="table table-striped table-hover table-bordered table-dark z-depth-5">
                                     <thead className="thead-dark">
                                     <tr>
@@ -79,8 +80,8 @@ class Skills extends Component {
                                     {Skills.createTableWrapper("Python", "Numpy, Pandas, PyTorch", 90, 4)}
                                     {Skills.createTableWrapper("SQL", "Microsoft SQL Server, MySQL, Mongoose", 75, 5)}
                                     {Skills.createTableWrapper("HTML", "N/A", 90, 6)}
-                                    {Skills.createTableWrapper("CSS", "Bootstrap, Material Design", 90, 7)}
-                                    {Skills.createTableWrapper("JS/JSX", "React, Express, Node", 55, 8)}
+                                    {Skills.createTableWrapper("CSS", "Bootstrap, Material Design", 55, 7)}
+                                    {Skills.createTableWrapper("JS/JSX", "React, Express, Node", 85, 8)}
                                     {Skills.createTableWrapper("PHP", "N/A", 80, 9)}
                                     {Skills.createTableWrapper("Solidity", "MetaMask, Rinkeby", 65, 10)}
                                     {Skills.createTableWrapper("Arduino", "N/A", 80, 11)}

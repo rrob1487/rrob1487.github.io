@@ -3,8 +3,6 @@ import React, {Component} from "react"
 import {ProjectObjects} from "./Projects"
 import Carousel from "react-bootstrap/Carousel"
 import {Link} from "react-router-dom"
-import { useTheme } from '@material-ui/core/styles'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 class ProjectPage extends Component {
     constructor(props) {
@@ -26,17 +24,20 @@ class ProjectPage extends Component {
         ProjectObjects.forEach((proj, index) => {
             //if(proj.ProjectName === this.props.ProjectName){
             if (proj.ProjectName === ProjectName) {
-                console.log(proj.ProjectName)
+                //console.log(proj.ProjectName)
                 this.setState(proj)
             }
         })
         this._isMounted = true
-        console.log("isMounted: ".concat(this._isMounted))
+        //console.log("isMounted: ".concat(this._isMounted))
+
+        //Scroll Page To Top
+        window.scrollTo(0,0)
     }
 
     componentWillUnmount() {
         this._isMounted = false
-        console.log("isMounted: ".concat(this._isMounted))
+        //console.log("isMounted: ".concat(this._isMounted))
     }
 
 
@@ -56,7 +57,7 @@ return (
     <div>
         <MDBContainer fluid className="elegant-color-dark">
             <br/>
-            <Link to="/Projects">back to all projects</Link>
+            <Link to="" onClick={()=>this.props.history.goBack()}>back to all projects</Link>
             <MDBRow style={{height: "15vh"}}>
                 <MDBCol>
                     <MDBContainer className="flex-center">
@@ -113,6 +114,8 @@ return (
                     </MDBJumbotron>
                 </MDBCol>
             </MDBRow>
+            <Link to="" onClick={()=>this.props.history.goBack()}>back to all projects</Link>
+            <br/>
         </MDBContainer>
     </div>
 )
