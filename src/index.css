@@ -49,6 +49,11 @@
 
 }
 
+.project_picture{
+    max-width: 100%;
+    height: auto;
+}
+
 @media (min-width: 750px){
     .pictures {
         padding-left: 20vh;

@@ -78,10 +78,10 @@ return (
                                 <p className="text-light">{this.state.ProjectDescription}</p>
                             </MDBCol>
                             <MDBCol className="pictures" md="6">
-                                <Carousel controls={false}>
+                                <Carousel controls={true}>
                                     {this.state.Pictures.map((pic) => (
                                         <Carousel.Item>
-                                            <img height={"300vh"} className="z-depth-3"
+                                            <img height={"300vh"} className="project_picture z-depth-3"
                                                  src={process.env.PUBLIC_URL.concat("/pictures/", pic)}
                                                 alt={this.state.ProjectName}/>
                                         </Carousel.Item>
