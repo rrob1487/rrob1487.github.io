@@ -27,9 +27,6 @@ class Skills extends Component {
             <tr>
                 <th scope="row"><strong>{language}</strong></th>
                 <td>{tools}</td>
-                <td>
-                    {Skills.setExpBarColor(width)}
-                </td>
             </tr>
         )
     }
@@ -70,11 +67,10 @@ class Skills extends Component {
                                         <th style={{width: "10%"}} scope="col"><strong>Language</strong></th>
                                         <th style={{width: "60%"}} scope="col">Libraries, Frameworks, And Tools Used
                                         </th>
-                                        <th style={{width: "25%"}} scope="col">Experience</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {Skills.createTableWrapper("Java", "Spring, Spark, JUint, Android", 95, 1)}
+                                    {Skills.createTableItem("Java", "Spring, Spark, JUint, Android", 95, 1)}
                                     {Skills.createTableWrapper("C++", "Qt", 80, 2)}
                                     {Skills.createTableWrapper("C", "N/A", 60, 3)}
                                     {Skills.createTableWrapper("Python", "Numpy, Pandas, PyTorch", 90, 4)}
@@ -101,8 +97,7 @@ class Skills extends Component {
                                         <MDBCol size="6">
                                             <li>Scrum</li>
                                             <li>Maven</li>
-                                            <li>NPM/Yarn</li>
-                                            <li>KISS</li>
+                                            <li>Package Management Tools</li>
                                             <li>Agile Development</li>
                                             <li>Black Box Testing</li>
                                             <li>Test Driven Development</li>

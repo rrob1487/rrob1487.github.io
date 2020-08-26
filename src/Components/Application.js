@@ -15,7 +15,7 @@ import Skills from "./Skills"
 import Hobbies from "./Hobbies"
 import Experience from "./Experience"
 import Home from "./Home"
-import {Projects} from "./Projects"
+import {Projects, ProjectObjects} from "./Projects"
 import ProjectPage from "./ProjectPage"
 
 class Application extends Component {
@@ -24,7 +24,6 @@ class Application extends Component {
         this.state = {
             collapse: false,
         }
-        this.needsRefresh = false
         this.onClick = this.onClick.bind(this)
     }
 
@@ -36,7 +35,7 @@ class Application extends Component {
 
     update(name){
         if(ProjectPage) {
-            ProjectPage.updateState(name)
+            ProjectPage.updateState(name);
         }
     }
 
@@ -65,11 +64,11 @@ class Application extends Component {
                                         <MDBDropdownMenu>
                                             <MDBDropdownItem><a href="#/Projects">All Projects</a></MDBDropdownItem>
                                             {/*This is the code for putting the projects in the dropdown, currently is bugged switching between them*/}
-                                            {/*ProjectObjects.map((proj, index) => (
+                                            {ProjectObjects.map((proj) => (
                                                 <MDBDropdownItem onClick={() =>this.update(proj.ProjectName)}>
                                                     <a href={"#/Projects/".concat(proj.ProjectName)}>{proj.ProjectName} </a>
                                                 </MDBDropdownItem>
-                                            ))*/}
+                                            ))}
                                             <div className="dropdown-divider"/>
                                             <MDBDropdownItem><a href="#/Hobbies">My Hobbies</a></MDBDropdownItem>
                                         </MDBDropdownMenu>
@@ -113,11 +112,11 @@ class Application extends Component {
                             <Projects />
                         </Route>
                         {<Route exact path="/Projects/:ProjectName" component={ProjectPage}/>}
-                        {/*ProjectObjects.map((proj, index) => (
+                        {ProjectObjects.map((proj) => (
                             <Route exact path={"/Projects/".concat(proj.ProjectName)}>
                                 <ProjectPage ProjectName={proj.ProjectName}/>
                             </Route>
-                        ))*/}
+                        ))}
                     </Switch>
                 </header>
             </Router>)

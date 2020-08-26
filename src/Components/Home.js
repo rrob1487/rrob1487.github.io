@@ -25,8 +25,8 @@ class Home extends Component {
                                                 Hi my name is Robbie Weinel, my pronouns are he/him, and I'm a developer
                                                 and business professional from Colorado.
                                                 I graduated from Colorado State University in December 2019 with a
-                                                double major in Computer Science and Business Administration with a
-                                                concentration in Computer Information Systems.
+                                                double major in computer science and business administration with a
+                                                concentration in computer information systems.
                                                 If I had to pick 5 words to describe myself, they would be: competitor,
                                                 inventor, intreprenuer, autotelic, and team-player.
                                                 I am interested in job opportunities in security, research, system
