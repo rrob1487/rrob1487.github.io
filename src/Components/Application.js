@@ -8,15 +8,16 @@ import {
     MDBNavbarNav,
     MDBNavbarToggler,
     MDBNavItem,
-    MDBNavLink
+    MDBNavLink, MDBSideNavLink
 } from "mdbreact"
-import {HashRouter as Router, Switch, Route, } from "react-router-dom"
+import {HashRouter as Router, Switch, Route,} from "react-router-dom"
 import Skills from "./Skills"
 import Hobbies from "./Hobbies"
 import Experience from "./Experience"
 import Home from "./Home"
 import {Projects, ProjectObjects} from "./Projects"
 import ProjectPage from "./ProjectPage"
+import Accomplishments from "./Accomplishments";
 
 class Application extends Component {
     constructor(props) {
@@ -33,8 +34,8 @@ class Application extends Component {
         })
     }
 
-    update(name){
-        if(ProjectPage) {
+    update(name) {
+        if (ProjectPage) {
             ProjectPage.updateState(name);
         }
     }
@@ -51,28 +52,19 @@ class Application extends Component {
                         <MDBCollapse isOpen={this.state.collapse} navbar>
                             <MDBNavbarNav left>
                                 <MDBNavItem>
-                                    <MDBNavLink to="/Skills">Skills</MDBNavLink>
+                                    <MDBNavLink to="/Projects">Projects</MDBNavLink>
                                 </MDBNavItem>
-                                <MDBNavItem >
+                                <MDBNavItem>
                                     <MDBNavLink to="/Exp">Experience</MDBNavLink>
                                 </MDBNavItem>
                                 <MDBNavItem>
-                                    <MDBDropdown>
-                                        <MDBDropdownToggle nav>
-                                            <span className="mr-2">My Projects</span>
-                                        </MDBDropdownToggle>
-                                        <MDBDropdownMenu>
-                                            <MDBDropdownItem><a href="#/Projects">All Projects</a></MDBDropdownItem>
-                                            {/*This is the code for putting the projects in the dropdown, currently is bugged switching between them*/}
-                                            {ProjectObjects.map((proj) => (
-                                                <MDBDropdownItem onClick={() =>this.update(proj.ProjectName)}>
-                                                    <a href={"#/Projects/".concat(proj.ProjectName)}>{proj.ProjectName} </a>
-                                                </MDBDropdownItem>
-                                            ))}
-                                            <div className="dropdown-divider"/>
-                                            <MDBDropdownItem><a href="#/Hobbies">My Hobbies</a></MDBDropdownItem>
-                                        </MDBDropdownMenu>
-                                    </MDBDropdown>
+                                    <MDBNavLink to="/Skills">Skills</MDBNavLink>
+                                </MDBNavItem>
+                                <MDBNavItem>
+                                    <MDBNavLink to="/Hobbies">Hobbies</MDBNavLink>
+                                </MDBNavItem>
+                                <MDBNavItem>
+                                    <MDBNavLink to="/Accomplishments">Accomplishments</MDBNavLink>
                                 </MDBNavItem>
                             </MDBNavbarNav>
                             <MDBNavbarNav right>
@@ -85,7 +77,8 @@ class Application extends Component {
                                 </MDBNavItem>
                                 <MDBNavItem>
                                     <a className="nav-link" target="_blank" rel="noopener noreferrer"
-                                       href="https://www.linkedin.com/in/robbie-weinel-0013911a2/"><MDBIcon fab icon="linkedin"/></a>
+                                       href="https://www.linkedin.com/in/robbie-weinel-0013911a2/"><MDBIcon fab
+                                                                                                            icon="linkedin"/></a>
                                 </MDBNavItem>
                                 <MDBNavItem>
                                     <a className="nav-link" target="_blank" rel="noopener noreferrer"
@@ -108,15 +101,14 @@ class Application extends Component {
                         <Route path="/Exp">
                             <Experience/>
                         </Route>
+                        <Route path="/Accomplishments">
+                            <Accomplishments/>
+                        </Route>
                         <Route exact path="/Projects">
-                            <Projects />
+                            <Projects/>
                         </Route>
                         {<Route exact path="/Projects/:ProjectName" component={ProjectPage}/>}
-                        {ProjectObjects.map((proj) => (
-                            <Route exact path={"/Projects/".concat(proj.ProjectName)}>
-                                <ProjectPage ProjectName={proj.ProjectName}/>
-                            </Route>
-                        ))}
+
                     </Switch>
                 </header>
             </Router>)
