@@ -22,21 +22,21 @@ class Home extends Component {
                                     <MDBRow center>
                                         <MDBCol md="7" sm="12">
                                             <p className="text-light indent-text" >
-                                                Hi my name is Robbie Weinel, my pronouns are he/him, and I'm a developer
+                                                Hi, my name is Robbie Weinel, my pronouns are he/him, and I'm a developer
                                                 and business professional from Colorado.
                                                 I graduated from Colorado State University in December 2019 with a
                                                 double major in computer science and business administration with a
                                                 concentration in computer information systems.
-                                                If I had to pick 5 words to describe myself, they would be: competitor,
+                                                If I had to pick 5 words to describe myself, they would be competitor,
                                                 inventor, intreprenuer, autotelic, and team-player.
                                                 I am interested in job opportunities in security, research, system
-                                                administration, system architecture, and backend/fullstack development. I'm also
+                                                administration, system architecture, and backend/full-stack development. I'm also
                                                 interested in any projects
                                                 related to machine learning, blockchain, robotics, or any job where I
                                                 can
                                                 help to make a positive impact on the environment. Please contact me
                                                 with any
-                                                job opportunities or questions, my contact information is in the page
+                                                job opportunities or questions, my contact information is on the page
                                                 header.
 
                                             </p>

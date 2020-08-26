@@ -6,20 +6,6 @@ class Skills extends Component {
     constructor(props) {
         super(props)
         Skills.createTableItem = Skills.createTableItem.bind(this)
-        Skills.setExpBarColor = Skills.setExpBarColor.bind(this)
-        Skills.createTableWrapper = Skills.createTableWrapper.bind(this)
-    }
-
-    //This Creates The Outer Most Table Element
-    static createTableWrapper(language, tools, width, index) {
-        if (index % 2 === 1) {
-            return (<ReactWOW animation="slideInLeft"
-                              delay={(.04 * index).toString() + "s"}>{Skills.createTableItem(language, tools, width)}</ReactWOW>)
-        } else {
-            return (<ReactWOW animation="slideInRight"
-                              delay={(.04 * index).toString() + "s"}>{Skills.createTableItem(language, tools, width)}</ReactWOW>)
-        }
-
     }
 
     static createTableItem(language, tools, width) {
@@ -30,17 +16,6 @@ class Skills extends Component {
             </tr>
         )
     }
-
-    static setExpBarColor(width) {
-        if (width > 75) {
-            return (<div className="meter"><span style={{width: " " + width + "%"}}/></div>)
-        } else if (width <= 75 && width >= 60) {
-            return (<div className="meter orangeSpan"><span style={{width: " " + width + "%"}}/></div>)
-        } else {
-            return (<div className="meter redSpan"><span style={{width: " " + width + "%"}}/></div>)
-        }
-    }
-
 
     render() {
         return (
@@ -57,36 +32,39 @@ class Skills extends Component {
                 <MDBRow center>
                     <MDBCol size="11">
                         {/*Table*/}
-                        <MDBJumbotron className="elegant-color z-depth-5">
-                            <MDBContainer fluid>
-                                <h3 className="text-light">Programming Languages</h3>
-                                <br/>
-                                <table className="table table-striped table-hover table-bordered table-dark z-depth-5">
-                                    <thead className="thead-dark">
-                                    <tr>
-                                        <th style={{width: "10%"}} scope="col"><strong>Language</strong></th>
-                                        <th style={{width: "60%"}} scope="col">Libraries, Frameworks, And Tools Used
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    {Skills.createTableItem("Java", "Spring, Spark, JUint, Android", 95, 1)}
-                                    {Skills.createTableWrapper("C++", "Qt", 80, 2)}
-                                    {Skills.createTableWrapper("C", "N/A", 60, 3)}
-                                    {Skills.createTableWrapper("Python", "Numpy, Pandas, PyTorch", 90, 4)}
-                                    {Skills.createTableWrapper("SQL", "Microsoft SQL Server, MySQL, Mongoose", 75, 5)}
-                                    {Skills.createTableWrapper("HTML", "N/A", 90, 6)}
-                                    {Skills.createTableWrapper("CSS", "Bootstrap, Material Design", 55, 7)}
-                                    {Skills.createTableWrapper("JS/JSX", "React, Express, Node", 85, 8)}
-                                    {Skills.createTableWrapper("PHP", "N/A", 80, 9)}
-                                    {Skills.createTableWrapper("Solidity", "MetaMask, Rinkeby", 65, 10)}
-                                    {Skills.createTableWrapper("Arduino", "N/A", 80, 11)}
-                                    {Skills.createTableWrapper("Dart", "Flutter", 25, 12)}
-                                    {Skills.createTableWrapper("Bash", "N/A", 75, 13)}
-                                    </tbody>
-                                </table>
-                            </MDBContainer>
-                        </MDBJumbotron>
+                        <ReactWOW animation="fadeInLeft">
+                            <MDBJumbotron className="elegant-color z-depth-5">
+                                <MDBContainer fluid>
+                                    <h3 className="text-light">Programming Languages</h3>
+                                    <br/>
+                                    <table
+                                        className="table table-striped table-hover table-bordered table-dark z-depth-5">
+                                        <thead className="thead-dark">
+                                        <tr>
+                                            <th style={{width: "10%"}} scope="col"><strong>Language</strong></th>
+                                            <th style={{width: "60%"}} scope="col">Libraries, Frameworks, And Tools Used
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {Skills.createTableItem("Java", "Spring, Spark, JUint, Android", 95, 1)}
+                                        {Skills.createTableItem("C++", "Qt", 80, 2)}
+                                        {Skills.createTableItem("C", "N/A", 60, 3)}
+                                        {Skills.createTableItem("Python", "Numpy, Pandas, PyTorch", 90, 4)}
+                                        {Skills.createTableItem("SQL", "Microsoft SQL Server, MySQL, Mongoose", 75, 5)}
+                                        {Skills.createTableItem("HTML", "N/A", 90, 6)}
+                                        {Skills.createTableItem("CSS", "Bootstrap, Material Design", 55, 7)}
+                                        {Skills.createTableItem("JS/JSX", "React, Express, Node", 85, 8)}
+                                        {Skills.createTableItem("PHP", "N/A", 80, 9)}
+                                        {Skills.createTableItem("Solidity", "MetaMask, Rinkeby", 65, 10)}
+                                        {Skills.createTableItem("Arduino", "N/A", 80, 11)}
+                                        {Skills.createTableItem("Dart", "Flutter", 25, 12)}
+                                        {Skills.createTableItem("Bash", "N/A", 75, 13)}
+                                        </tbody>
+                                    </table>
+                                </MDBContainer>
+                            </MDBJumbotron>
+                        </ReactWOW>
                         {/*Bonus Info*/}
                         <ReactWOW animation="slideInUp">
                             <MDBJumbotron className="elegant-color z-depth-5">

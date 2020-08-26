@@ -63,9 +63,9 @@ class Application extends Component {
                                 <MDBNavItem>
                                     <MDBNavLink to="/Hobbies">Hobbies</MDBNavLink>
                                 </MDBNavItem>
-                                <MDBNavItem>
-                                    <MDBNavLink to="/Accomplishments">Accomplishments</MDBNavLink>
-                                </MDBNavItem>
+                                {/*<MDBNavItem>*/}
+                                {/*    <MDBNavLink to="/Accomplishments">Accomplishments</MDBNavLink>*/}
+                                {/*</MDBNavItem>*/}
                             </MDBNavbarNav>
                             <MDBNavbarNav right>
                                 <MDBNavItem>
