@@ -84,6 +84,10 @@ class Skills extends Component {
                                             <li>Basic Cryptography</li>
                                             <li>JSON</li>
                                             <li>Fuzzing</li>
+                                            <li>BurpSuite</li>
+                                            <li>Kali</li>
+                                            <li>Nessus</li>
+                                            <li>Snort</li>
                                         </MDBCol>
                                         <MDBCol size="6">
                                             <li>Universal Modeling Language</li>
@@ -98,6 +102,9 @@ class Skills extends Component {
                                             <li>Google Cloud Platform</li>
                                             <li>Docker</li>
                                             <li>pfSense</li>
+                                            <li>WireShark</li>
+                                            <li>SQLMap</li>
+                                            <li>Metasploit</li>
                                         </MDBCol>
                                     </MDBRow>
                                 </ul>

@@ -4,6 +4,14 @@ import BasicCard from "./BasicCard"
 
 export const ProjectObjects = [
     {
+        ProjectName: "Advanced Networking And Security Capstone",
+        ProjectDescription: "For my Advanced Networking and Security class, I was required to use VMWare to manage and harden a virtual network. The network contained four Linux boxes and a Windows box. Grading was based on our ability to secure the system against the professor’s automated attacks and our peers' directed attacks.",
+        Tools: "A plethora of tools was used to complete this course. I now understand why systems admins have such a hard time managing their network bloat. The Windows server hosted a Microsoft SQL server, FTP server, and legacy NET web app. Alongside the Windows server was a Ubuntu server, which hosted a MySQL server and Apache Webserver. I also set up a virtual PfSense machine as the gateway and a SELK machine as the IDS and log analysis tool. The last box I managed was a Kali box used for penetration testing. I used tons of Kali tools including SQLMap, NMAP, HashCat, and BurpSuite. Getting hands-on experience using these professional tools was inspiring.",
+        Lessons: "This capstone provided many insights for me, and I am thankful that I was able to take such a well-designed course. Not only did I learn how to protect and attack networks, but I also learned that I have a passion for doing so. ",
+        DateFinished: "Dec 2019",
+        Pictures: ["security.jpg"]
+    },
+    {
         ProjectName: 'Roller Ball',
         ProjectDescription: "This was the capstone project for my Object-Oriented Programing course. My team of 5 was tasked with creating a functioning Roller Ball Game. We worked in a scrum environment and in 3 sprints we were able to create and host a functioning RESTful application. Roller Ball is a circular chess variant, played on a 7x7 board. More information can be found here: http://history.chess.free.fr/rollerball.htm",
         Tools: "A Java Spark API and a React Front end were used to complete this project. A database was considered for persistent storage, but after meeting with the product owner (PO), it was decided that serialization of information in a text file was the best solution, because the scale was small and the project objective was more focused on our object-oriented approach to the solution.",

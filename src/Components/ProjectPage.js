@@ -108,7 +108,7 @@ return (
                         <MDBRow center>
                             <MDBCol md="10">
                                 <h2 className="text-light">Link To Code:</h2>
-                                <p className="text-light">{this.state.Link ? <a target="_blank" rel="noopener noreferrer" href={this.state.Link}><MDBIcon fab icon="github"/> - {this.state.Link}</a>: "Coming Soon"}</p>
+                                <p className="text-light">{this.state.Link ? <a target="_blank" rel="noopener noreferrer" href={this.state.Link}><MDBIcon fab icon="github"/> - {this.state.Link}</a>: "Link Unavailable"}</p>
                             </MDBCol>
                         </MDBRow>
                     </MDBJumbotron>
