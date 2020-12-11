@@ -81,7 +81,7 @@ return (
                                 <Carousel controls={true}>
                                     {this.state.Pictures.map((pic) => (
                                         <Carousel.Item>
-                                            <img height={"300vh"} className="project_picture z-depth-3"
+                                            <img height={"400vh"} width={"600vh"} project_picture z-depth-3
                                                  src={process.env.PUBLIC_URL.concat("/pictures/", pic)}
                                                 alt={this.state.ProjectName}/>
                                         </Carousel.Item>
